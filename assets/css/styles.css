@@ -43,7 +43,7 @@
     }
 
     .hero-navbar {
-      position: absolute;
+      position: fixed;
       top: 24px;
       left: 50%;
       transform: translateX(-50%);
@@ -105,10 +105,6 @@
         box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
       }
 
-      .hero-card {
-        margin-top: 72px;
-      }
-
       .hero-navbar .navbar-collapse {
         border-radius: 0 0 16px 16px;
         margin-top: 0.5rem;
@@ -116,11 +112,6 @@
       }
 
       .hero-navbar .nav-link {
-        color: #f9fafb;
-      }
-
-      .hero-navbar .social-btn {
-        border-color: rgba(249, 250, 251, 0.45);
         color: #f9fafb;
       }
 
@@ -961,8 +952,75 @@
       }
     }
 
-    @media (max-width:410px) {
-      .hero-title {
-        padding-top: 100px;
-      }
-    }
+    .faq-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(249, 250, 251, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-icon i {
+  font-size: 0.9rem;
+  transition: transform 0.25s ease;
+}
+
+.faq-item.active .faq-icon i {
+  transform: rotate(180deg);
+}
+
+section[id], header+section[id] {
+    scroll-margin-top: 110px;
+}
+
+
+.hero-navbar .nav-link {
+  position: relative;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #facc91;
+  transition: width 0.25s ease;
+}
+
+.hero-navbar .nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.hero-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.hero-navbar .social-btn {
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.2s ease;
+}
+
+.hero-navbar .social-btn:hover {
+  transform: translateY(-1px) scale(1.04);
+}
+
+@media (max-width: 991.98px) {
+
+  .hero-navbar .navbar-toggler {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background-color 0.25s ease;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+}
