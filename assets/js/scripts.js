@@ -28,37 +28,51 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".faq-item");
 
-    items.forEach(item => {
-        const header = item.querySelector(".faq-header");
+    function setBodyHeight(item) {
         const body = item.querySelector(".faq-body");
-        const icon = item.querySelector(".faq-icon");
-
         if (item.classList.contains("active")) {
             body.style.maxHeight = body.scrollHeight + "px";
-            icon.textContent = "−";
+        } else {
+            body.style.maxHeight = 0;
         }
+    }
+
+    items.forEach(item => {
+        const icon = item.querySelector(".faq-icon");
+        if (item.classList.contains("active")) {
+            icon.textContent = "−";
+            setBodyHeight(item);
+        } else {
+            icon.textContent = "+";
+            setBodyHeight(item);
+        }
+    });
+
+    items.forEach(item => {
+        const header = item.querySelector(".faq-header");
+        const icon = item.querySelector(".faq-icon");
 
         header.addEventListener("click", () => {
             const isActive = item.classList.contains("active");
 
             items.forEach(other => {
-                if (other !== item) {
-                    other.classList.remove("active");
-                    const otherBody = other.querySelector(".faq-body");
-                    const otherIcon = other.querySelector(".faq-icon");
-                    otherBody.style.maxHeight = 0;
-                    otherIcon.textContent = "+";
-                }
+                other.classList.remove("active");
+                other.querySelector(".faq-icon").textContent = "+";
+                setBodyHeight(other);
             });
 
-            if (isActive) {
-                item.classList.remove("active");
-                body.style.maxHeight = 0;
-                icon.textContent = "+";
-            } else {
+            if (!isActive) {
                 item.classList.add("active");
-                body.style.maxHeight = body.scrollHeight + "px";
                 icon.textContent = "−";
+                setBodyHeight(item);
+            }
+        });
+    });
+
+    window.addEventListener("resize", () => {
+        items.forEach(item => {
+            if (item.classList.contains("active")) {
+                setBodyHeight(item);
             }
         });
     });
