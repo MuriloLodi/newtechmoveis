@@ -188,6 +188,7 @@
       text-align: center;
       color: var(--text-muted);
       font-size: 1.2rem;
+      transform: rotate(180deg);
     }
 
     .footer-arrow span {
@@ -206,6 +207,6 @@
       }
 
       .card {
-        border-radius: 0 0 26px 26px;
+        border-radius: 26px;
       }
     }
