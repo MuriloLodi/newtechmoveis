@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".executamos-swiper", {
         loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: false
         },
         speed: 700,
-        slidesPerView: 1.3,
+        slidesPerView: 1,
         spaceBetween: 8,
         breakpoints: {
             576: {
