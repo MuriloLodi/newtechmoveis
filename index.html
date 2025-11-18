@@ -4,27 +4,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>New Tech - Moveis Sob Medida</title>
 
+  <title>New Tech Móveis Sob Medida — Projetos Planejados em Toledo-PR</title>
+
+  <!-- SEO BÁSICO -->
+  <meta name="description"
+    content="New Tech Móveis Sob Medida em Toledo-PR. Execução de projetos planejados com alto padrão, tecnologia de ponta e precisão em cada detalhe para banheiros, dormitórios, cozinhas, salas e ambientes comerciais." />
+  <meta name="keywords"
+    content="móveis sob medida, móveis planejados, móveis em Toledo PR, marcenaria, dormitórios planejados, cozinhas planejadas, banheiros planejados, salas planejadas, New Tech Móveis" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="/" />
+
+  <!-- OPEN GRAPH / FACEBOOK -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="New Tech Móveis — Móveis Sob Medida em Toledo-PR" />
+  <meta property="og:description"
+    content="Móveis sob medida com qualidade, tecnologia e precisão. Projetos executados com excelência para residências e espaços comerciais em Toledo-PR e região." />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="assets/img/sala.jpeg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="New Tech Móveis — Móveis Sob Medida em Toledo-PR" />
+  <meta name="twitter:description"
+    content="Projetos planejados com alto padrão de qualidade, tecnologia e precisão para transformar ambientes." />
+  <meta name="twitter:image" content="assets/img/sala.jpeg" />
+
+  <!-- UX / MOBILE -->
+  <meta name="theme-color" content="#111111" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- PRECONNECT / PERFORMANCE -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/ico.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- DADOS ESTRUTURADOS: LOCAL BUSINESS / ORGANIZATION -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "New Tech Móveis Sob Medida",
+    "url": "/",
+    "logo": "assets/img/logo.png",
+    "image": "assets/img/sala.jpeg",
+    "description": "Soluções em móveis sob medida com alto padrão de qualidade, tecnologia e precisão. Atendemos Toledo–PR e região, com envio de móveis para todo o Brasil.",
+    "telephone": "+55 45 99817-1831",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Odilio Barbieri - Pioneira",
+      "addressLocality": "Toledo",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Toledo-PR e região"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:30",
+        "closes": "12:00"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
   <div class="hero-card">
-    <img class="fundo" src="assets/img/sala.jpeg" alt="">
+    <img class="fundo" src="assets/img/sala.jpeg" alt="Sala planejada com móveis sob medida New Tech">
 
     <div class="hero-overlay"></div>
 
     <header>
       <nav class="hero-navbar container navbar navbar-expand-lg">
         <div class="container px-0">
-          <a class="navbar-brand" href="#hero"><img class="logo" src="assets/img/logo.png" alt=""></a>
+          <a class="navbar-brand" href="#hero">
+            <img class="logo" src="assets/img/logo.png" alt="Logo New Tech Móveis">
+          </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHero"
             aria-controls="navbarHero" aria-expanded="false" aria-label="Abrir navegação">
@@ -48,14 +129,16 @@
             </ul>
 
             <div class="d-flex align-items-center gap-2 ms-lg-3 mt-2 mt-lg-0">
-              <a href="https://www.facebook.com/newtechmoveis/" class="text-decoration-none text-reset"><button
-                  class="social-btn" type="button">
+              <a href="https://www.facebook.com/newtechmoveis/" class="text-decoration-none text-reset" aria-label="Facebook New Tech Móveis">
+                <span class="social-btn">
                   <i class="bi bi-facebook"></i>
-                </button> </a>
-              <a href="https://www.instagram.com/newtechmoveis/" class="text-decoration-none text-reset"> <button
-                  class="social-btn" type="button">
-                  <i class="bi bi-instagram"></i> </a>
-              </button>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/newtechmoveis/" class="text-decoration-none text-reset" aria-label="Instagram New Tech Móveis">
+                <span class="social-btn">
+                  <i class="bi bi-instagram"></i>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -68,11 +151,12 @@
           Seu projeto merece mais do que móveis. <br> Merece excelência em cada detalhe.
         </h1>
         <p class="hero-subtitle">
-          Móveis sob medida exigem confiança e precisão. Garantimos a execução do seu projeto com a mais alta qualidade, desde a escolha dos materiais até a entrega pontual. Sua satisfação é o nosso compromisso.
+          Móveis sob medida exigem confiança e precisão. Garantimos a execução do seu projeto com a mais alta qualidade,
+          desde a escolha dos materiais até a entrega pontual. Sua satisfação é o nosso compromisso.
         </p>
 
         <div class="hero-btn-wrapper">
-          <a href="https://wa.me/5545998171831" class="hero-btn">
+          <a href="https://wa.me/5545998171831" class="hero-btn" target="_blank" rel="noopener">
             <i class="bi bi-whatsapp"></i>
             SOLICITAR UM ORÇAMENTO
           </a>
@@ -80,6 +164,7 @@
       </div>
     </div>
   </div>
+
   <main>
 
     <section class="section-quality">
@@ -92,7 +177,7 @@
             </h2>
 
             <p class="quality-text">
-              Na New Tech Móveis , cada projeto é executado com precisão, cuidado e tecnologia de ponta. Utilizamos
+              Na New Tech Móveis, cada projeto é executado com precisão, cuidado e tecnologia de ponta. Utilizamos
               materiais de alta qualidade, cuidadosamente selecionados para garantir durabilidade, beleza e sofisticação
               para o seu ambiente.
             </p>
@@ -105,10 +190,10 @@
             <p class="quality-text mb-4">
               Nossa equipe é treinada, experiente e apaixonada pelo que faz. Trabalhamos para superar expectativas e
               entregar um resultado que você realmente se orgulhe.
-              Aqui, você acompanha tudo e aprova cada etapa
+              Aqui, você acompanha tudo e aprova cada etapa.
             </p>
 
-            <a href="https://wa.me/5545998171831" target="_blank"
+            <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
               class="btn quality-btn d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               SOLICITAR UM ORÇAMENTO
@@ -116,7 +201,7 @@
           </div>
 
           <div class="col-lg-6 text-center text-lg-end">
-            <img src="assets/img/corte.jpeg" alt="Móvel planejado" class="img-fluid quality-image">
+            <img src="assets/img/corte.jpeg" alt="Execução de móveis planejados com corte de precisão" class="img-fluid quality-image" loading="lazy">
           </div>
         </div>
       </div>
@@ -128,9 +213,9 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div class="ambiente-item">
-              <img src="assets/img/banheiro4.jpeg" alt="Banheiros planejados" class="ambiente-img ambiente-img-default">
-              <img src="assets/img/banheiro3.jpeg" alt="Banheiros planejados - Detalhe"
-                class="ambiente-img ambiente-img-hover">
+              <img src="assets/img/banheiro4.jpeg" alt="Banheiros planejados" class="ambiente-img ambiente-img-default" loading="lazy">
+              <img src="assets/img/banheiro3.jpeg" alt="Banheiros planejados - detalhe"
+                class="ambiente-img ambiente-img-hover" loading="lazy">
 
               <div class="ambiente-label">
                 <span>Banheiros</span>
@@ -140,9 +225,9 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div class="ambiente-item">
-              <img src="assets/img/quarto3.jpeg" alt="Dormitórios planejados" class="ambiente-img ambiente-img-default">
-              <img src="assets/img/quarto4.jpeg" alt="Dormitórios planejados - Detalhe"
-                class="ambiente-img ambiente-img-hover">
+              <img src="assets/img/quarto3.jpeg" alt="Dormitórios planejados" class="ambiente-img ambiente-img-default" loading="lazy">
+              <img src="assets/img/quarto4.jpeg" alt="Dormitórios planejados - detalhe"
+                class="ambiente-img ambiente-img-hover" loading="lazy">
 
               <div class="ambiente-label">
                 <span>Dormitórios</span>
@@ -152,9 +237,9 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div class="ambiente-item">
-              <img src="assets/img/cozinha.jpeg" alt="Cozinhas planejadas" class="ambiente-img ambiente-img-default">
-              <img src="assets/img/cozinha2.jpeg" alt="Cozinhas planejadas - Detalhe"
-                class="ambiente-img ambiente-img-hover">
+              <img src="assets/img/cozinha.jpeg" alt="Cozinhas planejadas" class="ambiente-img ambiente-img-default" loading="lazy">
+              <img src="assets/img/cozinha2.jpeg" alt="Cozinhas planejadas - detalhe"
+                class="ambiente-img ambiente-img-hover" loading="lazy">
 
               <div class="ambiente-label">
                 <span>Cozinhas</span>
@@ -164,8 +249,8 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div class="ambiente-item">
-              <img src="assets/img/sala2.jpeg" alt="Salas planejadas" class="ambiente-img ambiente-img-default">
-              <img src="assets/img/sala3.jpeg" alt="Salas planejadas - Detalhe" class="ambiente-img ambiente-img-hover">
+              <img src="assets/img/sala2.jpeg" alt="Salas planejadas" class="ambiente-img ambiente-img-default" loading="lazy">
+              <img src="assets/img/sala3.jpeg" alt="Salas planejadas - detalhe" class="ambiente-img ambiente-img-hover" loading="lazy">
 
               <div class="ambiente-label">
                 <span>Salas</span>
@@ -176,9 +261,6 @@
         </div>
       </div>
     </section>
-
-
-
 
     <section class="section-diferenciais" id="diferenciais">
       <div class="container">
@@ -196,13 +278,12 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dif-card text-center">
               <div class="dif-icon">
-                <i class="bi bi-grid-3x3-gap-fill"></i>
+                <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
               </div>
               <h4 class="dif-title">Design Exclusivo Premium</h4>
               <p class="dif-text">
                 Cada móvel combina arte e funcionalidade, criando harmonia com seu espaço. Desenvolvemos
-                peças sob medida
-                que refletem sua identidade e estilo.
+                peças sob medida que refletem sua identidade e estilo.
               </p>
             </div>
           </div>
@@ -210,13 +291,12 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dif-card text-center">
               <div class="dif-icon">
-                <i class="bi bi-award"></i>
+                <i class="bi bi-award" aria-hidden="true"></i>
               </div>
               <h4 class="dif-title">Materiais de Alta Qualidade</h4>
               <p class="dif-text">
                 Usamos materiais premium para garantir durabilidade e beleza atemporal. Seu ambiente
-                recebe acabamento
-                impecável e qualidade que perdura.
+                recebe acabamento impecável e qualidade que perdura.
               </p>
             </div>
           </div>
@@ -224,13 +304,12 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dif-card text-center">
               <div class="dif-icon">
-                <i class="bi bi-headset"></i>
+                <i class="bi bi-headset" aria-hidden="true"></i>
               </div>
               <h4 class="dif-title">Atendimento Personalizado</h4>
               <p class="dif-text">
                 Cada cliente é único, e nosso atendimento reflete isso. Da criação à instalação,
-                cuidamos de tudo para
-                oferecer um serviço exclusivo e sem preocupações.
+                cuidamos de tudo para oferecer um serviço exclusivo e sem preocupações.
               </p>
             </div>
           </div>
@@ -238,13 +317,12 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dif-card text-center">
               <div class="dif-icon">
-                <i class="bi bi-person-hearts"></i>
+                <i class="bi bi-person-hearts" aria-hidden="true"></i>
               </div>
               <h4 class="dif-title">Paixão pelo que Fazemos</h4>
               <p class="dif-text">
                 Nossa maior satisfação é criar ambientes acolhedores e sofisticados. Mais que móveis,
-                entregamos espaços
-                planejados para conforto e inspiração.
+                entregamos espaços planejados para conforto e inspiração.
               </p>
             </div>
           </div>
@@ -252,7 +330,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dif-card text-center">
               <div class="dif-icon">
-                <i class="bi bi-mic"></i>
+                <i class="bi bi-mic" aria-hidden="true"></i>
               </div>
               <h4 class="dif-title">Tecnologia de Ponta</h4>
               <p class="dif-text">
@@ -264,7 +342,7 @@
         </div>
 
         <div class="text-center mt-5">
-          <a href="https://wa.me/5545998171831" target="_blank"
+          <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
             class="btn dif-cta-btn d-inline-flex align-items-center gap-2">
             <i class="bi bi-whatsapp"></i>
             SOLICITAR UM ORÇAMENTO
@@ -273,8 +351,6 @@
 
       </div>
     </section>
-
-
 
     <section class="section-cases" id="cases">
       <div class="case-block case-dark">
@@ -308,7 +384,7 @@
                   <li>Acabamento premium em tons modernos</li>
                 </ul>
 
-                <a href="https://wa.me/5545998171831" target="_blank"
+                <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
                   class="btn case-btn d-inline-flex align-items-center gap-2 mt-3">
                   <i class="bi bi-whatsapp"></i>
                   SOLICITAR UM ORÇAMENTO
@@ -319,7 +395,7 @@
 
             <div class="col-12 col-lg-5">
               <div class="case-image-wrapper">
-                <img src="assets/img/cama.jpeg" alt="Projeto 1" class="case-img">
+                <img src="assets/img/cama.jpeg" alt="Dormitório moderno com painel ripado e iluminação" class="case-img" loading="lazy">
               </div>
             </div>
           </div>
@@ -360,7 +436,7 @@
                   <li>Composição contemporânea, ampla e altamente funcional</li>
                 </ul>
 
-                <a href="https://wa.me/5545998171831" target="_blank"
+                <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
                   class="btn case-btn d-inline-flex align-items-center gap-2 mt-3">
                   <i class="bi bi-whatsapp"></i>
                   SOLICITAR UM ORÇAMENTO
@@ -371,7 +447,7 @@
 
             <div class="col-12 col-lg-5">
               <div class="case-image-wrapper">
-                <img src="assets/img/sala2.jpeg" alt="Projeto 2" class="case-img">
+                <img src="assets/img/sala2.jpeg" alt="Living integrado com painel ripado e escada flutuante" class="case-img" loading="lazy">
               </div>
             </div>
           </div>
@@ -379,7 +455,7 @@
       </div>
     </section>
 
-    <section class="section-cases" id="cases">
+    <section class="section-cases">
       <div id="quemsomos" class="case-block case-dark">
         <div class="container px-0">
           <div class="row g-0 align-items-stretch">
@@ -410,7 +486,7 @@
 
             <div class="col-12 col-lg-5">
               <div class="case-image-wrapper">
-                <img src="assets/img/escritorio.jpeg" alt="Projeto 1" class="case-img">
+                <img src="assets/img/escritorio.jpeg" alt="Escritório New Tech Móveis" class="case-img" loading="lazy">
               </div>
             </div>
           </div>
@@ -428,7 +504,7 @@
           Clique aqui, solicite um orçamento e garanta a satisfação dos seus clientes.
         </p>
 
-        <a href="https://wa.me/5545998171831" target="_blank"
+        <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
           class="btn executamos-btn d-inline-flex align-items-center gap-2">
           <i class="bi bi-whatsapp"></i>
           SOLICITAR UM ORÇAMENTO
@@ -439,34 +515,34 @@
         <div class="swiper executamos-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="assets/img/banheiro.jpeg" alt="Projeto 1">
+              <img src="assets/img/banheiro.jpeg" alt="Banheiro planejado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/cozinha.jpeg" alt="Projeto 2">
+              <img src="assets/img/cozinha.jpeg" alt="Cozinha planejada" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/quarto.jpeg" alt="Projeto 3">
+              <img src="assets/img/quarto.jpeg" alt="Quarto planejado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/sala.jpeg" alt="Projeto 4">
+              <img src="assets/img/sala.jpeg" alt="Sala planejada" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/sala2.jpeg" alt="Projeto 5">
+              <img src="assets/img/sala2.jpeg" alt="Sala integrada planejada" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/banheiro2.jpeg" alt="Projeto 6">
+              <img src="assets/img/banheiro2.jpeg" alt="Detalhe de banheiro planejado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/escritorio.jpeg" alt="Projeto 7">
+              <img src="assets/img/escritorio.jpeg" alt="Escritório planejado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/quarto2.jpeg" alt="Projeto 8">
+              <img src="assets/img/quarto2.jpeg" alt="Dormitório planejado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/sala2.jpeg" alt="Projeto 9">
+              <img src="assets/img/sala2.jpeg" alt="Ambiente de sala com painel ripado" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/cama.jpeg" alt="Projeto 10">
+              <img src="assets/img/cama.jpeg" alt="Cama planejada com painel iluminado" loading="lazy">
             </div>
           </div>
         </div>
@@ -480,14 +556,14 @@
           <h2 class="faq-title">DÚVIDAS<br>FREQUENTES</h2>
         </div>
 
-        <div class="faq-list mx-auto">
-          <div class="faq-item active">
+        <div class="faq-list mx-auto" itemscope itemtype="https://schema.org/FAQPage">
+          <div class="faq-item active" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <button type="button" class="faq-header">
               <span class="faq-icon">−</span>
-              <span class="faq-question">Quanto tempo leva para entregar um projeto de móveis sob medida?</span>
+              <span class="faq-question" itemprop="name">Quanto tempo leva para entregar um projeto de móveis sob medida?</span>
             </button>
-            <div class="faq-body">
-              <p>
+            <div class="faq-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Normalmente o prazo médio varia de 30 a 45 dias após a aprovação do projeto e fechamento do contrato.
                 Esse tempo inclui produção, acabamento e instalação. Em projetos maiores ou mais complexos, alinhamos um
                 cronograma específico com você para garantir que tudo seja entregue dentro do combinado.
@@ -495,13 +571,13 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <button type="button" class="faq-header">
               <span class="faq-icon">+</span>
-              <span class="faq-question">Vocês fazem projeto e instalação na minha cidade?</span>
+              <span class="faq-question" itemprop="name">Vocês fazem projeto e instalação na minha cidade?</span>
             </button>
-            <div class="faq-body">
-              <p>
+            <div class="faq-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Atendemos principalmente a cidade de Toledo-PR e toda a região, realizando todas as etapas do processo:
                 medição, projeto, produção e instalação. Para clientes de outras cidades e estados, enviamos nossos
                 móveis para todo o Brasil. Quando necessário, avaliamos a viabilidade de deslocamento para instalação e
@@ -510,13 +586,13 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <button type="button" class="faq-header">
               <span class="faq-icon">+</span>
-              <span class="faq-question">Qual a diferença entre móveis planejados e móveis prontos?</span>
+              <span class="faq-question" itemprop="name">Qual a diferença entre móveis planejados e móveis prontos?</span>
             </button>
-            <div class="faq-body">
-              <p>
+            <div class="faq-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Móveis planejados são desenvolvidos sob medida para o seu ambiente, aproveitando cada centímetro com
                 máxima funcionalidade, estética e durabilidade. São feitos especificamente para o espaço, garantindo
                 encaixe perfeito e acabamento superior. <br>
@@ -530,14 +606,14 @@
 
         <div class="faq-cta text-center">
           <div class="faq-cta-icon">
-            <i class="bi bi-chat-dots"></i>
+            <i class="bi bi-chat-dots" aria-hidden="true"></i>
           </div>
           <h3 class="faq-cta-title">Ainda ficou com dúvidas?</h3>
           <p class="faq-cta-text">
             Entre em contato conosco e vamos te ajudar!
           </p>
 
-          <a href="https://wa.me/5545998171831" target="_blank"
+          <a href="https://wa.me/5545998171831" target="_blank" rel="noopener"
             class="btn faq-cta-btn d-inline-flex align-items-center gap-2">
             <i class="bi bi-whatsapp"></i>
             TIRAR DÚVIDAS
@@ -556,18 +632,18 @@
           <h5 class="fw-bold text-white mb-3">
             New Tech Planejados
           </h5>
-          <p class=" mb-3">
+          <p class="mb-3">
             Soluções em móveis sob medida com alto padrão de qualidade, tecnologia e precisão. Atendemos Toledo–PR e
             região, com envio de móveis para todo o Brasil.
           </p>
           <div class="d-flex gap-3 mt-3 social">
-            <a href="https://wa.me/5545998171831" target="_blank" class="social-icon">
+            <a href="https://wa.me/5545998171831" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp New Tech Móveis">
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://www.instagram.com/newtechmoveis/" target="_blank" class="social-icon">
+            <a href="https://www.instagram.com/newtechmoveis/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram New Tech Móveis">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/newtechmoveis/" target="_blank" class="social-icon">
+            <a href="https://www.facebook.com/newtechmoveis/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook New Tech Móveis">
               <i class="fa-brands fa-facebook"></i>
             </a>
           </div>
@@ -581,7 +657,6 @@
             <li><a href="#quemsomos" class="footer-link">Quem Somos</a></li>
           </ul>
         </div>
-
 
         <div class="col-lg-4 col-md-6">
           <h5 class="fw-bold text-white mb-3">Contato</h5>
@@ -617,7 +692,6 @@
           </p>
         </div>
 
-
         <hr class="my-4 opacity-25">
 
         <div class="text-center d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
@@ -632,13 +706,15 @@
           </p>
         </div>
       </div>
+    </div>
   </footer>
 
-
-  <a href="https://wa.me/5545998171831" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+  <a href="https://wa.me/5545998171831" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Fale conosco pelo WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
